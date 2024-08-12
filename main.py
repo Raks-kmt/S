@@ -29,11 +29,12 @@ from bs4 import BeautifulSoup
 import datetime
 import aiohttp
 
-bot = Client("bot",
-             bot_token= "", 
-             #bot_token= os.environ.get("BOT_TOKEN"),
-             api_id= ,
-             api_hash= "")
+bot = Client(
+    "bot",
+    api_id=API_ID,
+    api_hash=API_HASH,
+    bot_token=BOT_TOKEN
+)
 auth_users = []
 #romeo  
 
