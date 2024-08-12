@@ -33,7 +33,7 @@ bot = Client(
     "bot",
     api_id=28526237,
     api_hash=936db76a74f9a52cfb2cea8a62e4c20e,
-    bot_token=7495845718:AAFJuFz_cNwKpze82h4dIjG5qolyImgwLFc,
+    bot_token=7495845718:AAFJuFz_cNwKpze82h4dIjG5qolyImgwLFc
 )
 auth_users = []
 #romeo  
