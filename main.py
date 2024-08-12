@@ -31,9 +31,9 @@ import aiohttp
 
 bot = Client(
     "bot",
-    api_id=API_ID,
-    api_hash=API_HASH,
-    bot_token=BOT_TOKEN
+    api_id=28526237,
+    api_hash=936db76a74f9a52cfb2cea8a62e4c20e,
+    bot_token=7495845718:AAFWpgMI97godgsuwAxx8mK_YySWGeRMz6I
 )
 auth_users = []
 #romeo  
