@@ -35,7 +35,7 @@ bot = Client(
     api_hash=api_hash,
     bot_token=bot_token
 )
-auth_users = [6486192717]
+auth_users = []
 #romeo  
 
 owner_id = 6486192717
