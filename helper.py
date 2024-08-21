@@ -277,7 +277,7 @@ async def drm_download_video(url, qual, name, keys):
 
         # Use N_m3u8DL-RE for decryption
         nurl = url.replace("master",f"master_{nqual}")
-        subprocess.run([n_m3u8dl_re_path, "--auto-select", "--key", f"{key1}:{key2}", nurl, "-mt", "-M", "format=mp4", "--save-name", name], check=True)
+        subprocess.run([n_m3u8dl_re_path, "--auto-select", "--key", f"{'key1'}:{'key2'}", nurl, "-mt", "-M", "format=mp4", "--save-name", name], check=True)
 
         # Verify download
         result = os.system(f'ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "{name}.mp4"')
@@ -285,7 +285,7 @@ async def drm_download_video(url, qual, name, keys):
             print("Verification of the downloaded video failed.")
             return None
 
-        print(f"Decryption and download successful with key {key1}.")
+        print(f"Decryption and download successful with key {'key1'}.")
         return f"{name}.mp4"
 
     except FileNotFoundError as exc:
