@@ -209,7 +209,7 @@ class Penpencil:
             try:
                 otp = otp_dict["data"]["otp"]
                 print(f"Received OTP: {otp}")
-                key = cls.get_key(otp)
+                key = cls.get_key("otp")
                 keys = f"{kid}:{'key'}"
             except Exception as e:
                 print("Error extracting key:", e)
